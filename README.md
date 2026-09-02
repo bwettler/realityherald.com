@@ -177,3 +177,25 @@ The initial prototype includes:
 ## Editorial Note
 
 All article headlines, descriptions, bylines, and other editorial material currently displayed in the prototype are sample content created for design purposes unless explicitly identified otherwise.
+
+
+### Funding
+Reality Herald plans to remain freely accessible and seek support through voluntary contributions, grants, and selective sponsorships rather than memberships, hard paywalls, or email fundraising campaigns.
+
+
+## Mission Emphasis
+
+Reality Herald seeks to introduce intellectually curious readers to the world of serious academic scholarship and help emerging writers participate in that world.
+
+Reality Herald also plans to showcase the work of Christian law unions and legal organizations, connecting practical legal work with serious academic scholarship and public argument.
+
+
+## Publication Policies
+
+The project now includes:
+- Editorial Standards
+- Corrections Policy
+- Privacy Policy
+- Terms of Use
+
+These pages provide an operational starting point and should receive legal review before Reality Herald begins substantial reporting on contentious matters or activates payment and data-collection systems.
