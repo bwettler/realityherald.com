@@ -199,3 +199,8 @@ The project now includes:
 - Terms of Use
 
 These pages provide an operational starting point and should receive legal review before Reality Herald begins substantial reporting on contentious matters or activates payment and data-collection systems.
+
+
+## Student Argumentation
+
+Reality Herald includes a student-facing hub for speech and debate, Model United Nations, Global Issues Network, and mock trial. The hub links to NSDA, Tabroom, GIN, AMTA, and selected 2026–27 Model UN conferences, with a conference-calendar page intended for continued updates.

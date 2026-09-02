@@ -1410,3 +1410,40 @@ button, input { font: inherit; }
 .policy-footer-links a {
   font-size: 13px;
 }
+
+/* ---- Student Argumentation ---- */
+.student-hero,.calendar-hero{max-width:1050px;padding-top:64px;padding-bottom:42px;border-bottom:1px solid var(--ink)}
+.student-hero h1,.calendar-hero h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(44px,6.3vw,72px);line-height:1.02;letter-spacing:-.035em;margin:0}
+.student-programs{display:grid;grid-template-columns:repeat(2,1fr);gap:0;padding-top:38px;padding-bottom:62px}
+.student-program-card{padding:30px;border-bottom:1px solid var(--rule);border-right:1px solid var(--rule)}
+.student-program-card:nth-child(even){border-right:0}
+.student-program-card h2{font-family:Georgia,'Times New Roman',serif;font-size:34px;margin:7px 0 11px}
+.student-program-card p{font-size:15px;line-height:1.62}
+.student-program-card .text-link{display:block;margin-top:10px}
+.argument-lab{padding-top:48px;padding-bottom:66px;border-top:1px solid var(--ink)}
+.argument-lab-grid,.student-home-grid{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--rule);margin-top:16px}
+.argument-lab-grid article,.student-home-grid article{padding:22px 20px;border-right:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.argument-lab-grid article:last-child,.student-home-grid article:last-child{border-right:0}
+.argument-lab-grid h3,.student-home-grid h3{font-family:Georgia,'Times New Roman',serif;font-size:22px;margin:0 0 8px}
+.argument-lab-grid p,.student-home-grid p{font-size:14px;line-height:1.55;margin:0}
+.student-cta,.calendar-note{background:var(--paper-deep);padding:34px 38px;margin-top:20px;margin-bottom:70px}
+.student-cta h2,.calendar-note h2{font-family:Georgia,'Times New Roman',serif;font-size:34px;margin:6px 0 10px}
+.student-home{padding-top:56px;padding-bottom:64px;border-top:1px solid var(--ink)}
+.calendar-updated{font-size:13px;margin-top:22px}
+.calendar-section{padding-top:44px;padding-bottom:30px}
+.calendar-category{margin-bottom:58px}
+.calendar-category-heading{border-bottom:2px solid var(--ink);padding-bottom:12px;margin-bottom:0}
+.calendar-category-heading h2{font-family:Georgia,'Times New Roman',serif;font-size:34px;margin:5px 0 0}
+.conference-list{border-bottom:1px solid var(--rule)}
+.conference-row{display:grid;grid-template-columns:150px 1fr;gap:28px;padding:24px 0;border-bottom:1px solid var(--rule)}
+.conference-row:last-child{border-bottom:0}
+.conference-date{font-family:Georgia,'Times New Roman',serif}
+.conference-date strong{display:block;font-size:18px}
+.conference-date span{font-size:14px}
+.conference-row h3{font-family:Georgia,'Times New Roman',serif;font-size:24px;margin:0 0 5px}
+.conference-row p{margin:0 0 8px;font-size:14px;line-height:1.5}
+.calendar-directory-box{background:var(--paper-deep);padding:26px 28px;margin-top:20px}
+.calendar-directory-box h3{font-family:Georgia,'Times New Roman',serif;font-size:25px;margin:0 0 8px}
+.calendar-directory-box p{font-size:15px;line-height:1.6}
+.calendar-directory-box .text-link{display:block;margin-top:12px}
+@media(max-width:800px){.student-programs,.argument-lab-grid,.student-home-grid{grid-template-columns:1fr}.student-program-card,.student-program-card:nth-child(even),.argument-lab-grid article,.student-home-grid article{border-right:0}.conference-row{grid-template-columns:1fr;gap:8px}}
