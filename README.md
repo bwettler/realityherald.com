@@ -81,6 +81,8 @@ realityherald.com/
 ├── README.md
 ├── archive/
 │   └── index.html
+├── contributors/
+│   └── index.html
 ├── write-for-us/
 │   └── index.html
 ├── assets/
