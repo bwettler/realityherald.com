@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Browse the Reality Herald archive by section, article type, author, and date." />
+  <title>Archive | Reality Herald</title>
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="utility-bar shell">
+      <div>Independent digital publication</div>
+      <div class="utility-links">
+        <a href="../index.html#newsletter">Newsletter</a>
+        <a href="../write-for-us/">Write for Us</a>
+      </div>
+    </div>
+
+    <div class="masthead shell article-masthead">
+      <div class="masthead-rule"></div>
+      <div class="masthead-meta">
+        <span>INDEPENDENT DIGITAL PUBLICATION</span>
+        <span>EST. 2026</span>
+      </div>
+      <a class="brand" href="../index.html" aria-label="Reality Herald home">REALITY HERALD</a>
+      <p class="tagline">News, ideas, science, and culture—examining what is real and why it matters.</p>
+    </div>
+
+    <nav class="primary-nav" aria-label="Primary navigation">
+      <div class="shell nav-inner">
+        <button class="menu-button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+        <div id="nav-links" class="nav-links">
+          <a href="../index.html#news">News &amp; Analysis</a>
+          <a href="../index.html#science">Science &amp; Technology</a>
+          <a href="../index.html#culture">Culture</a>
+          <a href="../index.html#ideas">Ideas</a>
+          <a href="../index.html#history">History &amp; Theology</a>
+          <a href="../index.html#scholarship">Scholarship</a>
+          <a href="../index.html#reality-check">Reality Check</a>
+          <a href="../index.html#podcasts">Podcasts</a>
+          <a class="active-nav" href="./">Archive</a>
+          <a href="../write-for-us/">Write for Us</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="archive-hero shell">
+      <div class="submission-kicker">ARCHIVE</div>
+      <h1>Browse Reality Herald</h1>
+      <p class="submission-dek">Find published work by section, article type, author, and date.</p>
+    </section>
+
+    <section class="archive-controls shell" aria-label="Archive filters">
+      <div class="archive-filter">
+        <label for="archive-search">Search</label>
+        <input id="archive-search" type="search" placeholder="Search titles, summaries, authors..." />
+      </div>
+
+      <div class="archive-filter">
+        <label for="section-filter">Section</label>
+        <select id="section-filter">
+          <option value="all">All sections</option>
+          <option value="news-analysis">News &amp; Analysis</option>
+          <option value="science-technology">Science &amp; Technology</option>
+          <option value="culture">Culture</option>
+          <option value="ideas">Ideas</option>
+          <option value="history-theology">History &amp; Theology</option>
+          <option value="scholarship">Scholarship</option>
+          <option value="reality-check">Reality Check</option>
+        </select>
+      </div>
+
+      <div class="archive-filter">
+        <label for="type-filter">Type</label>
+        <select id="type-filter">
+          <option value="all">All types</option>
+          <option value="report">Report</option>
+          <option value="analysis">Analysis</option>
+          <option value="argument">Argument</option>
+          <option value="review">Review</option>
+          <option value="fact-check">Fact Check</option>
+        </select>
+      </div>
+
+      <div class="archive-filter">
+        <label for="author-filter">Author</label>
+        <select id="author-filter">
+          <option value="all">All authors</option>
+          <option value="eleanor-grant">Eleanor Grant</option>
+        </select>
+      </div>
+    </section>
+
+    <section class="archive-results shell">
+      <div class="archive-summary-row">
+        <h2>All Articles</h2>
+        <span id="archive-count">1 article</span>
+      </div>
+
+      <div id="archive-list" class="archive-list">
+        <article class="archive-item"
+          data-section="ideas"
+          data-type="analysis"
+          data-author="eleanor-grant"
+          data-search="the argument beneath the argument eleanor grant ideas analysis facts conclusions evidence assumptions public debate">
+          <div class="archive-date">
+            <span>SEP</span>
+            <strong>02</strong>
+            <small>2026</small>
+          </div>
+          <div class="archive-item-main">
+            <div class="archive-meta-row">
+              <span class="eyebrow">IDEAS</span>
+              <span>ANALYSIS</span>
+              <span>Eleanor Grant</span>
+              <span>8 min read</span>
+            </div>
+            <h3><a href="../articles/ideas/the-argument-beneath-the-argument.html">The Argument Beneath the Argument</a></h3>
+            <p>Why people can agree on the evidence and still reach radically different conclusions.</p>
+          </div>
+        </article>
+      </div>
+
+      <div id="archive-empty" class="archive-empty" hidden>
+        <h3>No matching articles</h3>
+        <p>Try a broader search or change one of the filters.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-grid">
+      <div>
+        <a class="footer-brand" href="../index.html">REALITY HERALD</a>
+        <p>Independent reporting, analysis, argument, history, theology, and scholarship.</p>
+      </div>
+      <div>
+        <h3>Publication</h3>
+        <a href="./">Archive</a>
+        <a href="../write-for-us/">Write for Us</a>
+        <a href="../index.html#scholarship">Journal Guide</a>
+        <a href="../index.html#history">History &amp; Theology</a>
+      </div>
+      <div>
+        <h3>Standards</h3>
+        <a href="../write-for-us/#standards">Editorial Standards</a>
+        <a href="#">Corrections</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+    <div class="shell footer-bottom">© 2026 Reality Herald. Prototype publication.</div>
+  </footer>
+
+  <script src="../assets/js/script.js"></script>
+  <script>
+    const searchInput = document.getElementById('archive-search');
+    const sectionFilter = document.getElementById('section-filter');
+    const typeFilter = document.getElementById('type-filter');
+    const authorFilter = document.getElementById('author-filter');
+    const items = [...document.querySelectorAll('.archive-item')];
+    const count = document.getElementById('archive-count');
+    const empty = document.getElementById('archive-empty');
+
+    function filterArchive() {
+      const query = searchInput.value.trim().toLowerCase();
+      const section = sectionFilter.value;
+      const type = typeFilter.value;
+      const author = authorFilter.value;
+
+      let visible = 0;
+
+      items.forEach(item => {
+        const matchesSearch = !query || item.dataset.search.includes(query);
+        const matchesSection = section === 'all' || item.dataset.section === section;
+        const matchesType = type === 'all' || item.dataset.type === type;
+        const matchesAuthor = author === 'all' || item.dataset.author === author;
+
+        const show = matchesSearch && matchesSection && matchesType && matchesAuthor;
+        item.hidden = !show;
+        if (show) visible += 1;
+      });
+
+      count.textContent = `${visible} ${visible === 1 ? 'article' : 'articles'}`;
+      empty.hidden = visible !== 0;
+    }
+
+    [searchInput, sectionFilter, typeFilter, authorFilter].forEach(control => {
+      control.addEventListener('input', filterArchive);
+      control.addEventListener('change', filterArchive);
+    });
+  </script>
+</body>
+</html>
