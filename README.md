@@ -72,6 +72,32 @@ As the publication develops, contributor guidelines will address originality, so
 
 The goal is not to require contributors to agree with one another on every question. Reality Herald should provide room for serious disagreement while expecting writers to represent evidence and opposing arguments accurately and to distinguish assertion from demonstration.
 
+
+## Project Structure
+
+```text
+realityherald.com/
+├── index.html
+├── README.md
+├── assets/
+│   ├── css/
+│   │   └── styles.css
+│   └── js/
+│       └── script.js
+└── articles/
+    └── ideas/
+        └── the-argument-beneath-the-argument.html
+```
+
+As the publication grows, additional article categories can be added under `articles/`, such as:
+
+- `news-analysis/`
+- `science-technology/`
+- `culture/`
+- `history-theology/`
+- `scholarship/`
+- `reality-check/`
+
 ## Technical Setup
 
 The current prototype is intentionally simple and dependency-free.
@@ -132,6 +158,15 @@ Likely future additions include:
 - analytics;
 - custom-domain configuration for **RealityHerald.com**;
 - migration to a framework such as Next.js if the publication's scale eventually justifies it.
+
+## Repository Contents
+
+The initial prototype includes:
+
+- `index.html` — homepage structure and sample editorial content;
+- `styles.css` — typography, layout, responsive design, and visual styling;
+- `script.js` — lightweight interactive behavior;
+- `README.md` — project, editorial, contribution, and technical documentation.
 
 ## Editorial Note
 
