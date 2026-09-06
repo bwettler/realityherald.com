@@ -267,3 +267,8 @@ The scholar-driven college guide now contains 20 institutions across the United 
 ## Sitewide vocabulary rule
 
 Reality Herald follows the author's established banned-vocabulary rules throughout visible site copy, including articles, directory descriptions, resource pages, and navigation text. External URLs may retain provider-defined path strings.
+
+
+## Podcast infrastructure
+
+Reality Herald now includes a Podcasts landing page, reusable episode template, and sample episode page. The structure supports future audio embeds, RSS distribution, guests, show notes, transcripts, related reading, and listener support. No feed URL or platform account has been invented.
