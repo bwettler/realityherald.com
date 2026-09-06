@@ -223,12 +223,3 @@ The Colleges & Scholars hub now includes a separate Apologetics Programs section
 ## Submission Infrastructure
 
 Reality Herald now has four submission paths: Articles & Essays, Peer-Reviewed Scholarship, Student Arguments, and Teacher Resources. Secure upload processing is not yet connected.
-
-
-## Navigation update
-
-The primary menu now follows this order:
-
-News & Analysis · Reality Check · Science & Technology · History & Theology · Law · Culture · Ideas · Find Scholars · Student Arguments · Podcasts · Write for Us
-
-Archive appears only once in the top utility bar, alongside Support and Write for Us.
