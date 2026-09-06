@@ -232,3 +232,13 @@ The primary menu now follows this order:
 News & Analysis · Reality Check · Science & Technology · History & Theology · Law · Culture · Ideas · Find Scholars · Student Arguments · Podcasts · Write for Us
 
 Archive appears only once in the top utility bar, alongside Support and Write for Us.
+
+
+## Section dropdown navigation
+
+The main navigation now uses two expandable sections:
+
+- Student Section: Find Scholars, Colleges, Popular Arguments, Common Fallacies, Argument & Debate Resources, Conference Calendar, and Apologetics Programs.
+- Teacher Section: Union Propaganda, Resources, WebQuests, Teaching Argument, Debate/MUN/Mock Trial, and Student Conference Calendar.
+
+Standalone Find Scholars, Colleges, and Student Arguments links were removed from the main bar.
