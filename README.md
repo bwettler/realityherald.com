@@ -242,3 +242,8 @@ The main navigation now uses two expandable sections:
 - Teacher Section: Union Propaganda, Resources, WebQuests, Teaching Argument, Debate/MUN/Mock Trial, and Student Conference Calendar.
 
 Standalone Find Scholars, Colleges, and Student Arguments links were removed from the main bar.
+
+
+## Site search
+
+A Google-powered site search appears in the top utility bar. Searches are limited to Reality Herald using Google's `site:realityherald.com` operator. No Google Programmable Search Engine ID is required.

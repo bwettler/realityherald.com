@@ -1,4 +1,10 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>Colleges & Scholars | Reality Herald</title><link rel="stylesheet" href="../assets/css/styles.css"/></head><body><a class="skip-link" href="#main">Skip to content</a><header class="site-header"><div class="utility-bar shell"><div>Independent digital publication</div><div class="utility-links"><a href="../archive/">Archive</a><a href="../support/">Support</a><a href="../write-for-us/">Write for Us</a></div></div><div class="masthead shell article-masthead"><div class="masthead-rule"></div><div class="masthead-meta"><span>INDEPENDENT DIGITAL PUBLICATION</span><span>EST. 2026</span></div><a class="brand" href="../index.html">REALITY HERALD</a><p class="tagline">News, ideas, science, and culture—examining what is real and why it matters.</p></div><nav class="primary-nav" aria-label="Primary navigation">
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>Colleges & Scholars | Reality Herald</title><link rel="stylesheet" href="../assets/css/styles.css"/></head><body><a class="skip-link" href="#main">Skip to content</a><header class="site-header"><div class="utility-bar shell"><div>Independent digital publication</div><div class="utility-links">
+<form class="site-search-form" action="https://www.google.com/search" method="get" target="_blank" role="search" aria-label="Search Reality Herald">
+  <input type="hidden" name="q" value="">
+  <label class="sr-only" for="rh-search">Search Reality Herald</label>
+  <input id="rh-search" class="site-search-input" type="search" placeholder="Search" autocomplete="off">
+  <button class="site-search-button" type="submit">Search</button>
+</form><a href="../archive/">Archive</a><a href="../support/">Support</a><a href="../write-for-us/">Write for Us</a></div></div><div class="masthead shell article-masthead"><div class="masthead-rule"></div><div class="masthead-meta"><span>INDEPENDENT DIGITAL PUBLICATION</span><span>EST. 2026</span></div><a class="brand" href="../index.html">REALITY HERALD</a><p class="tagline">News, ideas, science, and culture—examining what is real and why it matters.</p></div><nav class="primary-nav" aria-label="Primary navigation">
       <div class="shell nav-inner">
         <button class="menu-button" aria-expanded="false" aria-controls="nav-links">Menu</button>
         <div id="nav-links" class="nav-links">
@@ -180,4 +186,21 @@
     </section>
 
 
-    <section class="college-note shell"><span class="eyebrow">HOW TO USE THIS GUIDE</span><h2>Do not choose a university because one famous name appears here.</h2><p>Prospective students should verify whether a scholar currently teaches undergraduates, supervises students in the relevant program, plans to remain at the institution, and offers courses that fit the student's actual degree. Reality Herald will keep expanding this guide while marking emeriti and associated scholars separately from active faculty.</p></section></main><footer class="site-footer"><div class="shell footer-grid"><div><a class="footer-brand" href="../index.html">REALITY HERALD</a><p>Independent reporting, analysis, argument, history, theology, and scholarship.</p></div><div><h3>Students & Scholarship</h3><a href="./">Colleges & Scholars</a><a href="../scholarship/">Find Scholars</a><a href="../students/">Student Arguments</a><a href="../teachers/">Teacher Resources</a></div><div><h3>Policies</h3><a href="../editorial-standards/">Editorial Standards</a><a href="../corrections/">Corrections</a><a href="../privacy/">Privacy</a><a href="../terms/">Terms of Use</a></div></div><div class="shell footer-bottom">© 2026 Reality Herald. Prototype publication.</div></footer><script src="../assets/js/script.js"></script><script>(function(){const s=document.getElementById('college-search'),f=document.getElementById('college-field'),cs=[...document.querySelectorAll('.college-card')];function go(){const q=s.value.toLowerCase(),fv=f.value.toLowerCase();cs.forEach(c=>{const h=c.textContent.toLowerCase(),ff=(c.dataset.field||'').toLowerCase();c.hidden=!((!q||h.includes(q))&&(!fv||ff.includes(fv)));})}s.addEventListener('input',go);f.addEventListener('change',go);})();</script></body></html>
+    <section class="college-note shell"><span class="eyebrow">HOW TO USE THIS GUIDE</span><h2>Do not choose a university because one famous name appears here.</h2><p>Prospective students should verify whether a scholar currently teaches undergraduates, supervises students in the relevant program, plans to remain at the institution, and offers courses that fit the student's actual degree. Reality Herald will keep expanding this guide while marking emeriti and associated scholars separately from active faculty.</p></section></main><footer class="site-footer"><div class="shell footer-grid"><div><a class="footer-brand" href="../index.html">REALITY HERALD</a><p>Independent reporting, analysis, argument, history, theology, and scholarship.</p></div><div><h3>Students & Scholarship</h3><a href="./">Colleges & Scholars</a><a href="../scholarship/">Find Scholars</a><a href="../students/">Student Arguments</a><a href="../teachers/">Teacher Resources</a></div><div><h3>Policies</h3><a href="../editorial-standards/">Editorial Standards</a><a href="../corrections/">Corrections</a><a href="../privacy/">Privacy</a><a href="../terms/">Terms of Use</a></div></div><div class="shell footer-bottom">© 2026 Reality Herald. Prototype publication.</div></footer><script src="../assets/js/script.js"></script><script>(function(){const s=document.getElementById('college-search'),f=document.getElementById('college-field'),cs=[...document.querySelectorAll('.college-card')];function go(){const q=s.value.toLowerCase(),fv=f.value.toLowerCase();cs.forEach(c=>{const h=c.textContent.toLowerCase(),ff=(c.dataset.field||'').toLowerCase();c.hidden=!((!q||h.includes(q))&&(!fv||ff.includes(fv)));})}s.addEventListener('input',go);f.addEventListener('change',go);})();</script>
+<script>
+document.addEventListener('submit', function (event) {
+  const form = event.target.closest('.site-search-form');
+  if (!form) return;
+  const input = form.querySelector('.site-search-input');
+  const hidden = form.querySelector('input[name="q"]');
+  const term = (input.value || '').trim();
+  if (!term) {
+    event.preventDefault();
+    input.focus();
+    return;
+  }
+  hidden.value = 'site:realityherald.com ' + term;
+});
+</script>
+
+</body></html>

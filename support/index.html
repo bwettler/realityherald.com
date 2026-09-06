@@ -12,7 +12,13 @@
   <header class="site-header">
     <div class="utility-bar shell">
       <div>Independent digital publication</div>
-      <div class="utility-links"><a href="../archive/">Archive</a><a href="../support/">Support</a><a href="../write-for-us/">Write for Us</a></div>
+      <div class="utility-links">
+<form class="site-search-form" action="https://www.google.com/search" method="get" target="_blank" role="search" aria-label="Search Reality Herald">
+  <input type="hidden" name="q" value="">
+  <label class="sr-only" for="rh-search">Search Reality Herald</label>
+  <input id="rh-search" class="site-search-input" type="search" placeholder="Search" autocomplete="off">
+  <button class="site-search-button" type="submit">Search</button>
+</form><a href="../archive/">Archive</a><a href="../support/">Support</a><a href="../write-for-us/">Write for Us</a></div>
     </div>
     <div class="masthead shell article-masthead">
       <div class="masthead-rule"></div>
@@ -198,5 +204,22 @@
     <div class="shell footer-bottom">© 2026 Reality Herald. Prototype publication.</div>
   </footer>
   <script src="../assets/js/script.js"></script>
+
+<script>
+document.addEventListener('submit', function (event) {
+  const form = event.target.closest('.site-search-form');
+  if (!form) return;
+  const input = form.querySelector('.site-search-input');
+  const hidden = form.querySelector('input[name="q"]');
+  const term = (input.value || '').trim();
+  if (!term) {
+    event.preventDefault();
+    input.focus();
+    return;
+  }
+  hidden.value = 'site:realityherald.com ' + term;
+});
+</script>
+
 </body>
 </html>

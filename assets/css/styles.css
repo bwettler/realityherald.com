@@ -1611,3 +1611,62 @@ button, input { font: inherit; }
     margin: 4px 0 10px;
   }
 }
+
+/* ---- Site search ---- */
+.site-search-form {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.site-search-input {
+  width: 150px;
+  height: 30px;
+  padding: 5px 9px;
+  border: 1px solid var(--rule, #c9c6bf);
+  background: transparent;
+  font: inherit;
+  font-size: 12px;
+}
+.site-search-input:focus {
+  outline: 1px solid var(--ink, #111);
+  outline-offset: 1px;
+}
+.site-search-button {
+  height: 30px;
+  padding: 5px 9px;
+  border: 1px solid var(--ink, #111);
+  background: transparent;
+  cursor: pointer;
+  font: inherit;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+}
+.site-search-button:hover,
+.site-search-button:focus {
+  background: var(--ink, #111);
+  color: var(--paper, #fff);
+}
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0,0,0,0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+@media (max-width: 760px) {
+  .site-search-form {
+    width: 100%;
+    margin: 8px 0;
+  }
+  .site-search-input {
+    flex: 1;
+    width: auto;
+  }
+}
