@@ -252,3 +252,8 @@ A Google-powered site search appears in the top utility bar. Searches are limite
 ## Starter editorial package
 
 Reality Herald now launches with eight substantive pieces across Ideas, Law, History & Theology, Science & Technology, Reality Check, the Student Section, and the Teacher Section. Placeholder contributor identities were replaced with the institutional byline “Reality Herald Editorial Desk,” and the homepage and Archive now link to the published starter content.
+
+
+## Law section
+
+Reality Herald now has a dedicated Law landing page covering Christian legal thought, natural law, religious liberty, church-state questions, constitutional interpretation, family and education law, major cases, legal organizations, and responses/rejoinders. The main navigation now links directly to `/law/`.
