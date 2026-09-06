@@ -1447,3 +1447,100 @@ button, input { font: inherit; }
 .calendar-directory-box p{font-size:15px;line-height:1.6}
 .calendar-directory-box .text-link{display:block;margin-top:12px}
 @media(max-width:800px){.student-programs,.argument-lab-grid,.student-home-grid{grid-template-columns:1fr}.student-program-card,.student-program-card:nth-child(even),.argument-lab-grid article,.student-home-grid article{border-right:0}.conference-row{grid-template-columns:1fr;gap:8px}}
+
+/* ---- Teacher Resources ---- */
+.teacher-hero,.webquest-hero{max-width:1050px;padding-top:64px;padding-bottom:42px;border-bottom:1px solid var(--ink)}
+.teacher-hero h1,.webquest-hero h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(44px,6.2vw,72px);line-height:1.02;letter-spacing:-.035em;margin:0}
+.teacher-tools{display:grid;grid-template-columns:repeat(2,1fr);padding-top:40px;padding-bottom:62px}
+.teacher-card{padding:30px;border-right:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.teacher-card:nth-child(even){border-right:0}
+.teacher-card h2{font-family:Georgia,'Times New Roman',serif;font-size:32px;margin:7px 0 10px}
+.teacher-card p{font-size:15px;line-height:1.6}
+.teacher-card .text-link{display:block;margin-top:10px}
+.teacher-card-feature{background:var(--paper-deep)}
+.teacher-assignments{padding-top:52px;padding-bottom:66px;border-top:1px solid var(--ink)}
+.teacher-assignment-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--rule);margin-top:16px}
+.teacher-assignment-grid article{padding:22px;border-right:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.teacher-assignment-grid article:nth-child(3n){border-right:0}
+.teacher-assignment-grid h3{font-family:Georgia,'Times New Roman',serif;font-size:23px;margin:0 0 8px}
+.teacher-assignment-grid p{font-size:14px;line-height:1.55;margin:0}
+.teacher-student-bridge{display:flex;justify-content:space-between;gap:40px;align-items:center;background:var(--paper-deep);padding:32px 36px;margin-bottom:62px}
+.teacher-student-bridge h2{font-family:Georgia,'Times New Roman',serif;font-size:32px;margin:5px 0 8px}
+.bridge-links{min-width:220px}
+.bridge-links .text-link{display:block;margin-top:12px}
+.teacher-resources-list{padding-bottom:70px}
+.external-resource-grid{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--rule);margin-top:16px}
+.external-resource-grid article{padding:22px 20px;border-right:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.external-resource-grid article:last-child{border-right:0}
+.external-resource-grid h3{font-family:Georgia,'Times New Roman',serif;font-size:22px;margin:0 0 8px}
+.external-resource-grid p{font-size:14px;line-height:1.55}
+.teacher-home{padding-top:56px;padding-bottom:64px;border-top:1px solid var(--ink)}
+.teacher-home-grid{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--rule);margin-top:16px}
+.teacher-home-grid article{padding:22px 20px;border-right:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.teacher-home-grid article:last-child{border-right:0}
+.teacher-home-grid h3{font-family:Georgia,'Times New Roman',serif;font-size:22px;margin:0 0 8px}
+.teacher-home-grid p{font-size:14px;line-height:1.55;margin:0}
+.webquest-steps{display:grid;grid-template-columns:repeat(2,1fr);padding-top:42px;padding-bottom:62px}
+.webquest-steps article{padding:28px 30px;border-right:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.webquest-steps article:nth-child(even){border-right:0}
+.webquest-steps span{font-size:12px;letter-spacing:.12em}
+.webquest-steps h2{font-family:Georgia,'Times New Roman',serif;font-size:30px;margin:6px 0 8px}
+.webquest-steps p{font-size:15px;line-height:1.6}
+.webquest-tools{padding-top:50px;padding-bottom:62px;border-top:1px solid var(--ink)}
+.webquest-tool-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--rule);margin-top:16px}
+.webquest-tool-grid article{padding:24px;border-right:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.webquest-tool-grid article:last-child{border-right:0}
+.webquest-tool-grid h3{font-family:Georgia,'Times New Roman',serif;font-size:24px;margin:0 0 8px}
+.webquest-example{background:var(--paper-deep);padding:34px 38px;margin-top:10px;margin-bottom:72px}
+.webquest-example h2{font-family:Georgia,'Times New Roman',serif;font-size:32px;margin:6px 0 12px}
+.webquest-example p{font-size:15px;line-height:1.62}
+@media(max-width:820px){
+.teacher-tools,.teacher-assignment-grid,.external-resource-grid,.teacher-home-grid,.webquest-steps,.webquest-tool-grid{grid-template-columns:1fr}
+.teacher-card,.teacher-card:nth-child(even),.teacher-assignment-grid article,.external-resource-grid article,.teacher-home-grid article,.webquest-steps article,.webquest-steps article:nth-child(even),.webquest-tool-grid article{border-right:0}
+.teacher-student-bridge{display:block}.bridge-links{margin-top:18px}
+}
+
+/* ---- Colleges & Scholars ---- */
+.college-hero{max-width:1080px;padding-top:64px;padding-bottom:44px;border-bottom:1px solid var(--ink)}.college-hero h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(44px,6.5vw,74px);line-height:1.02;letter-spacing:-.035em;margin:0}.college-method{padding-top:34px;padding-bottom:58px}.college-method-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--ink);border-bottom:1px solid var(--rule)}.college-method-grid article{padding:24px;border-right:1px solid var(--rule)}.college-method-grid article:last-child{border-right:0}.college-method-grid h2{font-family:Georgia,'Times New Roman',serif;font-size:24px;margin:6px 0 8px}.college-directory{padding-top:20px;padding-bottom:70px}.college-filter{display:grid;grid-template-columns:2fr 1fr;gap:18px;margin:22px 0 30px}.college-filter label{display:block;font-size:12px;letter-spacing:.08em;text-transform:uppercase}.college-filter input,.college-filter select{width:100%;margin-top:7px;padding:12px 13px;border:1px solid var(--rule);background:white;font:inherit;text-transform:none;letter-spacing:0}.college-list{display:grid;gap:26px}.college-card{border-top:2px solid var(--ink);border-bottom:1px solid var(--rule);padding:26px 0 30px}.college-card-top{display:flex;justify-content:space-between;gap:28px;align-items:flex-start}.college-card h2{font-family:Georgia,'Times New Roman',serif;font-size:34px;margin:5px 0 2px}.college-location{font-size:14px;margin:0;color:#555}.challenge-badge{min-width:120px;text-align:right}.challenge-badge span{display:block;font-size:10px;letter-spacing:.1em;text-transform:uppercase}.challenge-badge strong{font-family:Georgia,'Times New Roman',serif;font-size:19px}.college-summary{font-size:17px;line-height:1.6;max-width:850px;margin:20px 0 24px}.college-detail-grid{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid var(--rule)}.college-detail-grid>div{padding:18px 22px 18px 0;border-bottom:1px solid var(--rule)}.college-detail-grid>div:nth-child(odd){border-right:1px solid var(--rule)}.college-detail-grid>div:nth-child(even){padding-left:22px}.college-detail-grid h3{font-family:Georgia,'Times New Roman',serif;font-size:19px;margin:0 0 6px}.college-links{display:flex;flex-wrap:wrap;gap:18px;margin-top:18px}.college-note{background:var(--paper-deep);padding:34px 38px;margin-bottom:72px}.college-home{padding-top:56px;padding-bottom:64px;border-top:1px solid var(--ink)}.college-home-grid{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--rule);margin-top:16px}.college-home-grid article{padding:22px 20px;border-right:1px solid var(--rule);border-bottom:1px solid var(--rule)}.college-home-grid article:last-child{border-right:0}.college-home-grid h3{font-family:Georgia,'Times New Roman',serif;font-size:22px;margin:0 0 8px}@media(max-width:820px){.college-method-grid,.college-detail-grid,.college-home-grid,.college-filter{grid-template-columns:1fr}.college-method-grid article,.college-home-grid article,.college-detail-grid>div,.college-detail-grid>div:nth-child(odd),.college-detail-grid>div:nth-child(even){border-right:0;padding-left:0;padding-right:0}.college-card-top{display:block}.challenge-badge{text-align:left;margin-top:12px}}
+
+
+/* ---- Apologetics Programs ---- */
+.apologetics-programs{padding-top:58px;padding-bottom:66px;border-top:1px solid var(--ink)}
+.apologetics-intro{max-width:900px;font-size:16px;line-height:1.65;margin:20px 0 28px}
+.apologetics-columns{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:start}
+.apologetics-column{border-top:2px solid var(--ink)}
+.apologetics-column-head{padding:22px 0 18px;border-bottom:1px solid var(--rule)}
+.apologetics-column-head h3{font-family:Georgia,'Times New Roman',serif;font-size:30px;margin:6px 0 7px}
+.apologetics-column-head p{font-size:14px;line-height:1.55;margin:0}
+.apologetics-entry{padding:22px 0;border-bottom:1px solid var(--rule)}
+.apologetics-entry h4{font-family:Georgia,'Times New Roman',serif;font-size:23px;line-height:1.18;margin:0 0 8px}
+.apologetics-entry p{font-size:14px;line-height:1.58;margin:0 0 8px}
+.apologetics-entry a{font-weight:600}
+.apologetics-note{background:var(--paper-deep);padding:24px 28px;margin-top:32px}
+.apologetics-note p{font-size:15px;line-height:1.6;margin:7px 0 0}
+.apologetics-home{padding-top:56px;padding-bottom:64px;border-top:1px solid var(--ink)}
+.apologetics-home-grid{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--rule);margin-top:16px}
+.apologetics-home-grid article{padding:24px;border-right:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.apologetics-home-grid article:last-child{border-right:0}
+.apologetics-home-grid h3{font-family:Georgia,'Times New Roman',serif;font-size:24px;margin:0 0 8px}
+.apologetics-home-grid p{font-size:14px;line-height:1.55;margin:0}
+@media(max-width:820px){
+  .apologetics-columns,.apologetics-home-grid{grid-template-columns:1fr}
+  .apologetics-home-grid article{border-right:0}
+}
+
+/* ---- Submission infrastructure ---- */
+.submit-hero,.submit-detail-hero{max-width:1050px;padding:64px 0 42px;border-bottom:1px solid var(--ink)}
+.submit-hero h1,.submit-detail-hero h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(44px,6.4vw,72px);line-height:1.02;letter-spacing:-.035em;margin:0}
+.submission-paths{display:grid;grid-template-columns:repeat(2,1fr);padding:40px 0 62px}
+.submission-path{padding:30px;border-right:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.submission-path:nth-child(even){border-right:0}
+.submission-path h2{font-family:Georgia,'Times New Roman',serif;font-size:28px;line-height:1.15;margin:7px 0 10px}
+.submission-status,.write-submit-cta{background:var(--paper-deep);padding:32px 36px;margin-bottom:72px}
+.submission-status h2,.write-submit-cta h2{font-family:Georgia,'Times New Roman',serif;font-size:31px;margin:6px 0 10px}
+.submission-detail-layout{display:grid;grid-template-columns:minmax(0,760px) 260px;gap:54px;padding:42px 0 76px;align-items:start}
+.submission-detail-main h2{font-family:Georgia,'Times New Roman',serif;font-size:30px;margin-top:0}
+.submission-detail-main li{margin-bottom:8px;line-height:1.55}
+.submission-checklist{position:sticky;top:24px;border-top:2px solid var(--ink);padding-top:15px}
+.submission-disabled{background:var(--paper-deep);padding:16px;margin-top:12px}
+@media(max-width:820px){.submission-paths,.submission-detail-layout{grid-template-columns:1fr}.submission-path,.submission-path:nth-child(even){border-right:0}.submission-checklist{position:static}}

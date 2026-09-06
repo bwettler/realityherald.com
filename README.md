@@ -204,3 +204,31 @@ These pages provide an operational starting point and should receive legal revie
 ## Student Argumentation
 
 Reality Herald includes a student-facing hub for speech and debate, Model United Nations, Global Issues Network, and mock trial. The hub links to NSDA, Tabroom, GIN, AMTA, and selected 2026–27 Model UN conferences, with a conference-calendar page intended for continued updates.
+
+
+## Teacher Resources
+
+Reality Herald now includes a teacher-facing hub for WebQuests, classroom argument assignments, student-club preparation, and external teaching tools. The WebQuest guide links to PBworks, Google Sites, Teachers Pay Teachers, and the existing Student Argumentation section.
+
+
+## Colleges & Scholars
+Reality Herald now includes a searchable guide built around current scholars, departments, centers, intellectual challenge, and the distinction between active faculty and emeriti/intellectual lineage.
+
+
+## Apologetics Programs
+
+The Colleges & Scholars hub now includes a separate Apologetics Programs section. Universities, seminaries, and churches appear in that section solely because they offer structured apologetics education or recurring apologetics classes; inclusion does not imply broader endorsement. Hillsdale College has also been added to the main scholar-driven college directory based on current philosophy and religion faculty and research.
+
+
+## Submission Infrastructure
+
+Reality Herald now has four submission paths: Articles & Essays, Peer-Reviewed Scholarship, Student Arguments, and Teacher Resources. Secure upload processing is not yet connected.
+
+
+## Navigation update
+
+The primary menu now follows this order:
+
+News & Analysis · Reality Check · Science & Technology · History & Theology · Law · Culture · Ideas · Find Scholars · Student Arguments · Podcasts · Write for Us
+
+Archive appears only once in the top utility bar, alongside Support and Write for Us.
