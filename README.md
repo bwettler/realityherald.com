@@ -257,3 +257,8 @@ Reality Herald now launches with eight substantive pieces across Ideas, Law, His
 ## Law section
 
 Reality Herald now has a dedicated Law landing page covering Christian legal thought, natural law, religious liberty, church-state questions, constitutional interpretation, family and education law, major cases, legal organizations, and responses/rejoinders. The main navigation now links directly to `/law/`.
+
+
+## Expanded Colleges & Scholars directory
+
+The scholar-driven college guide now contains 20 institutions across the United States and United Kingdom. Entries emphasize current faculty, realistic student access, fields of strength, and intellectual challenge. Famous emeriti remain separated from scholars students may actually study with. The separate Apologetics Programs section remains intact and follows a different inclusion rule.

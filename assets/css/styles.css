@@ -1718,3 +1718,27 @@ button, input { font: inherit; }
   .law-response .button{display:inline-block;margin-top:16px}
   .law-case-list article{grid-template-columns:1fr;gap:6px}
 }
+
+/* ---- Expanded college directory ---- */
+.college-directory-note{
+  max-width:850px;
+  margin:10px 0 0;
+  font-size:14px;
+  line-height:1.58;
+}
+.college-legend{
+  display:grid;
+  grid-template-columns:auto 1fr 1fr 1fr;
+  gap:14px;
+  align-items:start;
+  padding:16px 0 18px;
+  border-top:1px solid var(--rule);
+  border-bottom:1px solid var(--rule);
+  margin-bottom:26px;
+  font-size:12px;
+  line-height:1.45;
+}
+.college-legend>strong{font-family:Georgia,'Times New Roman',serif;font-size:15px}
+@media(max-width:900px){
+  .college-legend{grid-template-columns:1fr}
+}
