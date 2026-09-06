@@ -22,7 +22,7 @@ Current priorities include:
 - selecting or building a content-management system;
 - connecting the finished publication to **RealityHerald.com**.
 
-The initial site deliberately avoids unnecessary technical complexity so that the publication's editorial structure and visual identity can develop before committing to a larger framework or CMS.
+The initial site deliberately avoids unnecessary technical complexity so that the publication's editorial structure and visual identity can develop before committing to a larger structure or CMS.
 
 ## Editorial Structure
 
@@ -31,7 +31,7 @@ Reality Herald is organized around several major sections:
 - **News & Analysis** — reporting, explanatory journalism, and analysis of significant events and developments.
 - **Science & Technology** — science, medicine, technology, artificial intelligence, research, and questions concerning how scientific claims should be understood.
 - **Culture** — books, film, media, education, the arts, social trends, criticism, and cultural commentary.
-- **Ideas** — essays and arguments concerning philosophy, politics, ethics, law, history, human nature, and other questions of enduring significance.
+- **Ideas** — essays and arguments concerning intellectual inquiry, politics, ethics, law, history, human nature, and other questions of enduring significance.
 - **History & Theology** — church history, historical theology, doctrine, councils and creeds, biographies, primary sources, denominational history, Christianity and culture, and related scholarship.
 - **Scholarship** — academic essays, research notes, book reviews, calls for papers, and resources connecting readers and writers with serious scholarly work.
 - **Reality Check** — careful examination of disputed factual claims, popular assertions, misleading narratives, and questions where evidence deserves closer scrutiny.
@@ -113,7 +113,7 @@ The current prototype is intentionally simple and dependency-free.
 - HTML5
 - CSS3
 - Vanilla JavaScript
-- No framework
+- No structure
 - No package manager required
 - No build process required
 
@@ -163,7 +163,7 @@ Likely future additions include:
 - accessibility review;
 - analytics;
 - custom-domain configuration for **RealityHerald.com**;
-- migration to a framework such as Next.js if the publication's scale eventually justifies it.
+- migration to a structure such as Next.js if the publication's scale eventually justifies it.
 
 ## Repository Contents
 
@@ -187,7 +187,7 @@ Reality Herald plans to remain freely accessible and seek support through volunt
 
 Reality Herald seeks to introduce intellectually curious readers to the world of serious academic scholarship and help emerging writers participate in that world.
 
-Reality Herald also plans to showcase the work of Christian law unions and legal organizations, connecting practical legal work with serious academic scholarship and public argument.
+Reality Herald also plans to showcase the work of Christian law unions and legal organizations, connecting practical legal work with serious academic scholarship and open argument.
 
 
 ## Publication Policies
@@ -217,7 +217,7 @@ Reality Herald now includes a searchable guide built around current scholars, de
 
 ## Apologetics Programs
 
-The Colleges & Scholars hub now includes a separate Apologetics Programs section. Universities, seminaries, and churches appear in that section solely because they offer structured apologetics education or recurring apologetics classes; inclusion does not imply broader endorsement. Hillsdale College has also been added to the main scholar-driven college directory based on current philosophy and religion faculty and research.
+The Colleges & Scholars hub now includes a separate Apologetics Programs section. Universities, seminaries, and churches appear in that section solely because they offer structured apologetics education or recurring apologetics classes; inclusion does not imply broader endorsement. Hillsdale College has also been added to the main scholar-driven college directory based on current intellectual inquiry and religion faculty and research.
 
 
 ## Submission Infrastructure
@@ -262,3 +262,8 @@ Reality Herald now has a dedicated Law landing page covering Christian legal tho
 ## Expanded Colleges & Scholars directory
 
 The scholar-driven college guide now contains 20 institutions across the United States and United Kingdom. Entries emphasize current faculty, realistic student access, fields of strength, and intellectual challenge. Famous emeriti remain separated from scholars students may actually study with. The separate Apologetics Programs section remains intact and follows a different inclusion rule.
+
+
+## Sitewide vocabulary rule
+
+Reality Herald follows the author's established banned-vocabulary rules throughout visible site copy, including articles, directory descriptions, resource pages, and navigation text. External URLs may retain provider-defined path strings.
