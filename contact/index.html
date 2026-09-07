@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Reality Herald." />
+  <title>Contact | Reality Herald</title>
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="utility-bar shell">
+      <div>Independent digital publication</div>
+      <div class="utility-links">
+        <form class="site-search-form" action="https://www.google.com/search" method="get" target="_blank" role="search" aria-label="Search Reality Herald">
+          <input type="hidden" name="q" value="">
+          <label class="sr-only" for="rh-search">Search Reality Herald</label>
+          <input id="rh-search" class="site-search-input" type="search" placeholder="Search" autocomplete="off">
+          <button class="site-search-button" type="submit">Search</button>
+        </form>
+        <a href="../archive/">Archive</a><a href="../support/">Support</a><a href="../write-for-us/">Write for Us</a>
+      </div>
+    </div>
+    <div class="masthead shell article-masthead">
+      <div class="masthead-rule"></div>
+      <div class="masthead-meta"><span>INDEPENDENT DIGITAL PUBLICATION</span><span>EST. 2026</span></div>
+      <a class="brand" href="../index.html">REALITY HERALD</a>
+      <p class="tagline">News, ideas, science, and culture—examining what is real and why it matters.</p>
+    </div>
+  </header>
+  <main id="main">
+    <section class="submission-hero shell">
+      <div class="submission-kicker">CONTACT</div>
+      <h1>Contact Reality Herald</h1>
+      <p class="submission-dek">Choose the address that best matches your message.</p>
+    </section>
+    <section class="submission-layout shell">
+      <aside class="submission-sidebar">
+        <div class="submission-side-block">
+          <span class="aside-label">Reality Herald</span>
+          <a href="mailto:contact@realityherald.com">General contact</a>
+          <a href="mailto:submissions@realityherald.com">Submissions</a>
+          <a href="mailto:editor@realityherald.com">Editorial desk</a>
+        </div>
+      </aside>
+      <div class="submission-main">
+        <section class="submission-section">
+          <h2>General questions and corrections</h2>
+          <p>For general questions, website matters, corrections, and other correspondence, write to <a href="mailto:contact@realityherald.com"><strong>contact@realityherald.com</strong></a>.</p>
+        </section>
+        <section class="submission-section">
+          <h2>Article and manuscript submissions</h2>
+          <p>For article proposals, pitches, manuscripts, and writing samples, write to <a href="mailto:submissions@realityherald.com"><strong>submissions@realityherald.com</strong></a>.</p>
+          <p><a class="text-link" href="../write-for-us/">Read the contributor guidelines →</a></p>
+        </section>
+        <section class="submission-section">
+          <h2>Editorial correspondence</h2>
+          <p>For accepted articles, requested revisions, author correspondence, and other editorial matters, write to <a href="mailto:editor@realityherald.com"><strong>editor@realityherald.com</strong></a>.</p>
+        </section>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="shell footer-grid">
+      <div><a class="footer-brand" href="../index.html">REALITY HERALD</a><p>Independent reporting, analysis, argument, history, theology, and scholarship.</p></div>
+      <div><h3>Publication</h3><a href="../write-for-us/">Write for Us</a><a href="../submit/">Submit</a><a href="./">Contact</a></div>
+      <div><h3>Policies</h3><a href="../editorial-standards/">Editorial Standards</a><a href="../corrections/">Corrections</a><a href="../privacy/">Privacy</a><a href="../terms/">Terms of Use</a></div>
+    </div>
+    <div class="shell footer-bottom">© 2026 Reality Herald.</div>
+  </footer>
+  <script src="../assets/js/script.js"></script>
+  <script>
+  document.addEventListener('submit', function (event) {
+    const form = event.target.closest('.site-search-form'); if (!form) return;
+    const input = form.querySelector('.site-search-input'), hidden = form.querySelector('input[name="q"]');
+    const term = (input.value || '').trim(); if (!term) { event.preventDefault(); input.focus(); return; }
+    hidden.value = 'site:realityherald.com ' + term;
+  });
+  </script>
+</body>
+</html>
