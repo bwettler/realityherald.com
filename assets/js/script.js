@@ -62,11 +62,16 @@ document.addEventListener('click', (event) => {
     return;
   }
 
-  const printWindow = window.open('', '_blank', 'noopener,noreferrer');
+  // Keep a usable reference long enough to build the print page.
+  const printWindow = window.open('', '_blank');
   if (!printWindow) {
     window.print();
     return;
   }
+
+  // Disconnect the new tab from the source page after opening while retaining
+  // the local JavaScript reference needed to write and print the article.
+  printWindow.opener = null;
 
   const stylesheetUrl = new URL('/assets/css/styles.css', window.location.origin).href;
   const articleCopy = article.cloneNode(true);
