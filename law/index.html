@@ -18,18 +18,13 @@
     .journal-section-heading{display:grid;grid-template-columns:170px 1fr;gap:34px;margin-bottom:28px}
     .journal-section-heading h2{font-family:Georgia,'Times New Roman',serif;font-size:34px;line-height:1.05;margin:0;font-weight:400}
     .journal-section-heading p{margin:0;color:#555;max-width:680px}
-    .journal-feature{display:grid;grid-template-columns:1.55fr .65fr;gap:52px;padding:18px 0 46px;border-bottom:1px solid var(--rule)}
-    .journal-feature h2{font-family:Georgia,'Times New Roman',serif;font-size:clamp(36px,5vw,54px);font-weight:400;line-height:1.05;margin:8px 0 14px}
-    .journal-dek{font-family:Georgia,'Times New Roman',serif;font-size:20px;line-height:1.5;color:#444;max-width:720px}
-    .journal-meta{font-size:11px;line-height:1.65;text-transform:uppercase;letter-spacing:.07em;color:var(--muted)}
-    .journal-meta strong{display:block;color:var(--ink);font-size:12px;margin-bottom:9px}
-    .journal-type{display:inline-block;border:1px solid var(--rule);padding:5px 8px;margin-top:12px;color:var(--ink)}
-    .journal-list{margin:0;padding:0;list-style:none}
-    .journal-entry{display:grid;grid-template-columns:170px 1fr;gap:34px;padding:30px 0;border-bottom:1px solid var(--rule)}
+    .journal-list{margin:0;padding:0;list-style:none;border-top:1px solid var(--rule)}
+    .journal-entry{display:grid;grid-template-columns:190px 1fr;gap:34px;padding:28px 0;border-bottom:1px solid var(--rule)}
     .journal-entry:last-child{border-bottom:0}
     .journal-entry h3{font-family:Georgia,'Times New Roman',serif;font-size:29px;line-height:1.12;font-weight:400;margin:0 0 9px}
     .journal-entry p{margin:0;color:#505050;max-width:700px}
-    .journal-entry .journal-meta{padding-top:4px}
+    .journal-meta{font-size:11px;line-height:1.65;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);padding-top:3px}
+    .journal-meta strong{display:block;color:var(--ink);font-size:11px;margin-bottom:5px}
     .peer-badge{display:inline-block;margin-top:9px;padding:4px 7px;border:1px solid var(--accent);color:var(--accent);font-size:10px;font-weight:800;letter-spacing:.07em;text-transform:uppercase}
     .topic-index{display:grid;grid-template-columns:repeat(2,1fr);gap:0 44px;border-top:1px solid var(--rule)}
     .topic-index article{padding:22px 0;border-bottom:1px solid var(--rule)}
@@ -52,8 +47,7 @@
     .journal-submit h2{font-family:Georgia,'Times New Roman',serif;font-size:30px;font-weight:400;margin:0 0 7px}
     .journal-submit p{margin:0;color:#555;max-width:690px}
     @media(max-width:760px){
-      .journal-section-heading,.journal-entry,.journal-feature{grid-template-columns:1fr;gap:12px}
-      .journal-feature{gap:24px}
+      .journal-section-heading,.journal-entry{grid-template-columns:1fr;gap:12px}
       .topic-index,.journal-resources{grid-template-columns:1fr}
       .journal-submit{display:block}
       .journal-submit .button{margin-top:18px}
@@ -151,35 +145,34 @@
 
     <section id="articles" class="journal-section journal-shell">
       <div class="journal-section-heading">
-        <div class="journal-label">Featured Article</div>
-        <h2>Current legal writing</h2>
-      </div>
-
-      <article class="journal-feature">
+        <div class="journal-label">Articles</div>
         <div>
-          <div class="eyebrow">Natural Law</div>
-          <h2><a href="../articles/law/what-natural-law-claims.html">What Natural Law Claims—and What It Does Not</a></h2>
-          <p class="journal-dek">Natural law deserves argument rather than caricature.</p>
-          <a class="text-link" href="../articles/law/what-natural-law-claims.html">Read article →</a>
+          <h2>Legal writing</h2>
+          <p>Essays, analysis, guides, and scholarship published in the Law section.</p>
         </div>
-        <div class="journal-meta">
-          <strong>Reality Herald Editorial Desk</strong>
-          Analysis<br>
-          Law<br>
-          2026
-          <span class="journal-type">Article</span>
-        </div>
-      </article>
+      </div>
 
       <ol class="journal-list">
         <li class="journal-entry">
           <div class="journal-meta">
-            Reality Herald Editorial Desk<br>
-            Guide<br>
-            Law
+            <strong>Reality Herald Editorial Desk</strong>
+            Analysis<br>
+            Natural Law<br>
+            2026
           </div>
           <article>
-            <div class="eyebrow">How to Read Law</div>
+            <h3><a href="../articles/law/what-natural-law-claims.html">What Natural Law Claims—and What It Does Not</a></h3>
+            <p>Natural law deserves argument rather than caricature.</p>
+          </article>
+        </li>
+        <li class="journal-entry">
+          <div class="journal-meta">
+            <strong>Reality Herald Editorial Desk</strong>
+            Guide<br>
+            How to Read Law<br>
+            2026
+          </div>
+          <article>
             <h3><a href="../articles/law/how-to-read-a-supreme-court-opinion.html">How to Read a Supreme Court Opinion Without Getting Lost</a></h3>
             <p>Find the question, holding, rule, and disagreement before drowning in citations.</p>
           </article>
