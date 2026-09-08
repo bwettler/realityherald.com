@@ -1,3 +1,11 @@
+// Explicitly set the Reality Herald favicon on every page and add a version
+// query so browsers request the current icon instead of a cached older one.
+const faviconLink = document.querySelector('link[rel="icon"]') || document.createElement('link');
+faviconLink.setAttribute('rel', 'icon');
+faviconLink.setAttribute('type', 'image/x-icon');
+faviconLink.setAttribute('href', '/favicon.ico?v=20260908');
+if (!faviconLink.parentNode) document.head.appendChild(faviconLink);
+
 const menuButton = document.querySelector('.menu-button');
 const navLinks = document.querySelector('.nav-links');
 
