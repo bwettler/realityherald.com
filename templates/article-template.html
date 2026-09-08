@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="[ARTICLE DESCRIPTION]" />
+  <title>[ARTICLE TITLE] | Reality Herald</title>
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+<body>
+  <!--
+    REALITY HERALD STANDARD ARTICLE TEMPLATE
+
+    Before publication:
+    1. Copy this file into the appropriate articles/[section]/ folder.
+    2. Adjust all ../../ relative paths after moving the copy.
+    3. Replace every bracketed placeholder.
+    4. Keep the Peer Reviewed label only for manuscripts that completed formal peer review and received final editorial acceptance.
+    5. Remove optional blocks that do not apply.
+    6. Verify links, citations, source notes, author information, and correction history before publication.
+  -->
+
+  <a class="skip-link" href="#article">Skip to article</a>
+
+  <header class="site-header">
+    <div class="utility-bar shell">
+      <div>[MONTH YEAR]</div>
+      <div class="utility-links">
+        <form class="site-search-form" action="https://www.google.com/search" method="get" target="_blank" role="search" aria-label="Search Reality Herald">
+          <input type="hidden" name="q" value="">
+          <label class="sr-only" for="rh-search">Search Reality Herald</label>
+          <input id="rh-search" class="site-search-input" type="search" placeholder="Search" autocomplete="off">
+          <button class="site-search-button" type="submit">Search</button>
+        </form>
+        <a href="../archive/">Archive</a>
+        <a href="../support/">Support</a>
+        <a href="../write-for-us/">Write for Us</a>
+      </div>
+    </div>
+
+    <div class="masthead shell article-masthead">
+      <div class="masthead-rule"></div>
+      <div class="masthead-meta"><span>INDEPENDENT DIGITAL PUBLICATION</span><span>EST. 2026</span></div>
+      <a class="brand" href="../index.html">REALITY HERALD</a>
+      <p class="tagline">News, ideas, science, and culture—examining what is real and why it matters.</p>
+    </div>
+
+    <nav class="primary-nav" aria-label="Primary navigation">
+      <div class="shell nav-inner">
+        <button class="menu-button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+        <div id="nav-links" class="nav-links">
+          <a href="../index.html#news">News &amp; Analysis</a>
+          <a href="../index.html#reality-check">Reality Check</a>
+          <a href="../index.html#science">Science &amp; Technology</a>
+          <a href="../index.html#history">History &amp; Theology</a>
+          <a href="../law/">Law</a>
+          <a href="../index.html#culture">Culture</a>
+          <a href="../index.html#ideas">Ideas</a>
+          <a href="../podcasts/">Podcasts</a>
+          <a href="../write-for-us/">Write for Us</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="article">
+    <article class="article-shell">
+      <header class="article-header">
+        <div class="article-section-label">[SECTION]</div>
+
+        <!-- OPTIONAL: retain only after completed formal peer review and final editorial acceptance. -->
+        <div class="article-section-label">PEER REVIEWED</div>
+
+        <h1>[ARTICLE HEADLINE]</h1>
+        <p class="article-dek">[SUBHEADLINE OR ONE-SENTENCE DECK]</p>
+
+        <div class="article-meta">
+          <div class="author-line">
+            <div class="author-monogram" aria-hidden="true">[INITIALS]</div>
+            <div>
+              <strong>[AUTHOR NAME]</strong>
+              <span>[PUBLICATION DATE] · [READING TIME] min read</span>
+            </div>
+          </div>
+          <div class="article-actions">
+            <button type="button" onclick="window.print()">Print</button>
+            <button type="button" id="copy-link">Copy link</button>
+          </div>
+        </div>
+      </header>
+
+      <!-- OPTIONAL HERO IMAGE. Replace this placeholder with the selected image treatment or remove the figure. -->
+      <figure class="article-hero">
+        <div class="story-image article-hero-image" role="img" aria-label="[IMAGE DESCRIPTION]"></div>
+        <!-- <figcaption>[IMAGE CAPTION AND CREDIT]</figcaption> -->
+      </figure>
+
+      <div class="article-layout">
+        <aside class="article-aside">
+          <div class="article-aside-block">
+            <span class="aside-label">Filed under</span>
+            <a href="[SECTION URL]">[SECTION]</a>
+            <!-- OPTIONAL SECOND CATEGORY: <a href="[SECOND CATEGORY URL]">[SECOND CATEGORY]</a> -->
+          </div>
+          <div class="article-aside-block">
+            <span class="aside-label">Article type</span>
+            <strong>[REPORT / ANALYSIS / ARGUMENT / REVIEW / SCHOLARSHIP]</strong>
+          </div>
+        </aside>
+
+        <div class="article-body">
+          <p class="article-lede">[OPENING LEDE]</p>
+
+          <p>[ARTICLE BODY]</p>
+
+          <h2>[SECTION HEADING]</h2>
+          <p>[ARTICLE BODY]</p>
+
+          <!-- Repeat headings, paragraphs, block quotations, lists, tables, or other article elements as needed. -->
+
+          <!-- OPTIONAL SOURCE NOTES / CITATIONS BLOCK -->
+          <div class="article-note">
+            <strong>Sources and notes:</strong>
+            [CITATIONS, LINKS, SOURCE NOTES, OR BIBLIOGRAPHIC INFORMATION]
+          </div>
+
+          <!-- OPTIONAL CORRECTION NOTE. Add only when a published correction or substantive update requires disclosure. -->
+          <div class="article-note">
+            <strong>Correction:</strong>
+            [DATE AND DESCRIPTION OF CORRECTION]
+          </div>
+        </div>
+      </div>
+
+      <footer class="article-footer">
+        <div>
+          <span class="aside-label">About the author</span>
+          <h2>[AUTHOR NAME]</h2>
+          <p>[AUTHOR BIOGRAPHY]</p>
+          <!-- OPTIONAL DISCLOSURE: <p><strong>Disclosure:</strong> [RELEVANT DISCLOSURE]</p> -->
+        </div>
+
+        <div class="related-links">
+          <span class="aside-label">Continue reading</span>
+          <a href="[RELATED ARTICLE URL]">[RELATED ARTICLE TITLE]</a>
+          <a href="[RELATED ARTICLE URL]">[RELATED ARTICLE TITLE]</a>
+          <a href="../archive/">Browse the Archive</a>
+        </div>
+      </footer>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-grid">
+      <div><a class="footer-brand" href="../index.html">REALITY HERALD</a><p>Independent reporting, analysis, argument, history, theology, and scholarship.</p></div>
+      <div><h3>Publication</h3><a href="../archive/">Archive</a><a href="../write-for-us/">Write for Us</a><a href="../support/">Support</a></div>
+      <div><h3>Policies</h3><a href="../editorial-standards/">Editorial Standards</a><a href="../peer-review/">Peer Review Policy</a><a href="../corrections/">Corrections</a><a href="../privacy/">Privacy</a><a href="../terms/">Terms of Use</a></div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/script.js"></script>
+  <script>
+  document.addEventListener('submit', function (event) {
+    const form = event.target.closest('.site-search-form');
+    if (!form) return;
+    const input = form.querySelector('.site-search-input');
+    const hidden = form.querySelector('input[name="q"]');
+    const term = (input.value || '').trim();
+    if (!term) { event.preventDefault(); input.focus(); return; }
+    hidden.value = 'site:realityherald.com ' + term;
+  });
+  </script>
+</body>
+</html>
