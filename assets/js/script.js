@@ -3,7 +3,7 @@
 const faviconLink = document.querySelector('link[rel="icon"]') || document.createElement('link');
 faviconLink.setAttribute('rel', 'icon');
 faviconLink.setAttribute('type', 'image/x-icon');
-faviconLink.setAttribute('href', '/favicon.ico?v=20260908');
+faviconLink.setAttribute('href', '/favicon.ico?v=20260908b');
 if (!faviconLink.parentNode) document.head.appendChild(faviconLink);
 
 const menuButton = document.querySelector('.menu-button');
