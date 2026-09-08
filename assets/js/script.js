@@ -8,6 +8,34 @@ if (menuButton && navLinks) {
   });
 }
 
+// Keep the main topical navigation pointed at the dedicated journal sections.
+const journalSectionLinks = {
+  'Science & Technology': '/science-tech/',
+  'History & Theology': '/history-theology/',
+  'Law': '/law/',
+  'Culture': '/culture/',
+  'Ideas': '/ideas/'
+};
+
+document.querySelectorAll('.nav-links > a').forEach((link) => {
+  const destination = journalSectionLinks[link.textContent.trim()];
+  if (destination) link.setAttribute('href', destination);
+});
+
+// On the homepage, point each section's "View all" or "Explore" link to the
+// matching journal landing page while leaving News & Analysis unchanged.
+const homepageJournalLinks = [
+  ['#science .section-heading-row a', '/science-tech/'],
+  ['#history .section-heading-row a', '/history-theology/'],
+  ['#culture .section-heading-row a', '/culture/'],
+  ['#ideas .section-heading-row a', '/ideas/']
+];
+
+homepageJournalLinks.forEach(([selector, destination]) => {
+  const link = document.querySelector(selector);
+  if (link) link.setAttribute('href', destination);
+});
+
 const newsletterForm = document.querySelector('.newsletter-form');
 if (newsletterForm) {
   newsletterForm.addEventListener('submit', (event) => {
