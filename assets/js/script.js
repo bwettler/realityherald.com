@@ -16,7 +16,6 @@ if (menuButton && navLinks) {
   });
 }
 
-// Keep the main topical navigation pointed at the dedicated journal sections.
 const journalSectionLinks = {
   'Science & Technology': '/science-tech/',
   'History & Theology': '/history-theology/',
@@ -30,8 +29,6 @@ document.querySelectorAll('.nav-links > a').forEach((link) => {
   if (destination) link.setAttribute('href', destination);
 });
 
-// On the homepage, point each section's "View all" or "Explore" link to the
-// matching journal landing page while leaving News & Analysis unchanged.
 const homepageJournalLinks = [
   ['#science .section-heading-row a', '/science-tech/'],
   ['#history .section-heading-row a', '/history-theology/'],
@@ -44,9 +41,6 @@ homepageJournalLinks.forEach(([selector, destination]) => {
   if (link) link.setAttribute('href', destination);
 });
 
-// Add a deliberately small Political Cartoon / Humor & Satire strip directly
-// below News & Analysis on the homepage. Keep this module limited to one item
-// per column so the page remains visually restrained.
 const newsSection = document.querySelector('#news');
 if (newsSection && !document.querySelector('#humor-satire')) {
   const humorSection = document.createElement('section');
@@ -56,8 +50,11 @@ if (newsSection && !document.querySelector('#humor-satire')) {
     <div class="rh-humor-grid">
       <article class="rh-humor-card">
         <div class="section-kicker">POLITICAL CARTOON</div>
-        <h2>Political Cartoon</h2>
-        <p class="rh-humor-muted">The first Reality Herald political cartoon will appear here.</p>
+        <a class="rh-cartoon-link" href="/articles/humor/national-partial-radio-explores-christianity.html" aria-label="Open Covering Christianity This Week cartoon and satire article">
+          <img class="rh-cartoon-image" src="/assets/images/national-public-ish-radio-cartoon.jpg" alt="Cartoon showing a National Public-ish Radio reporter interviewing a conspicuous street preacher while academic experts stand nearby." />
+        </a>
+        <h2><a href="/articles/humor/national-partial-radio-explores-christianity.html">Covering Christianity This Week</a></h2>
+        <p>A search for Christian expertise somehow ends at the loudest street corner.</p>
       </article>
       <article class="rh-humor-card">
         <div class="section-kicker">HUMOR &amp; SATIRE</div>
@@ -73,7 +70,8 @@ if (newsSection && !document.querySelector('#humor-satire')) {
     .rh-humor-card + .rh-humor-card { border-left:1px solid #c8c1b6; padding-left:32px; }
     .rh-humor-card h2 { margin:8px 0 10px; font-size:clamp(1.3rem,2vw,1.8rem); line-height:1.12; }
     .rh-humor-card p { margin:0; }
-    .rh-humor-muted { color:#6b655d; font-style:italic; }
+    .rh-cartoon-link { display:block; margin-top:10px; }
+    .rh-cartoon-image { display:block; width:100%; height:auto; border:1px solid #d8d1c7; }
     @media (max-width:700px) {
       .rh-humor-grid { grid-template-columns:1fr; gap:24px; }
       .rh-humor-card + .rh-humor-card { border-left:0; border-top:1px solid #c8c1b6; padding-left:0; padding-top:24px; }
@@ -122,7 +120,6 @@ if (copyLinkButton) {
   });
 }
 
-// Capture article Print clicks before any legacy inline window.print() handler runs.
 document.addEventListener('click', (event) => {
   const button = event.target.closest('.article-actions button');
   if (!button || button.textContent.trim().toLowerCase() !== 'print') return;
@@ -136,15 +133,12 @@ document.addEventListener('click', (event) => {
     return;
   }
 
-  // Keep a usable reference long enough to build the print page.
   const printWindow = window.open('', '_blank');
   if (!printWindow) {
     window.print();
     return;
   }
 
-  // Disconnect the new tab from the source page after opening while retaining
-  // the local JavaScript reference needed to write and print the article.
   printWindow.opener = null;
 
   const stylesheetUrl = new URL('/assets/css/styles.css', window.location.origin).href;
