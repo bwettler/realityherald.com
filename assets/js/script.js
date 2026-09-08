@@ -44,6 +44,44 @@ homepageJournalLinks.forEach(([selector, destination]) => {
   if (link) link.setAttribute('href', destination);
 });
 
+// Add a deliberately small Political Cartoon / Humor & Satire strip directly
+// below News & Analysis on the homepage. Keep this module limited to one item
+// per column so the page remains visually restrained.
+const newsSection = document.querySelector('#news');
+if (newsSection && !document.querySelector('#humor-satire')) {
+  const humorSection = document.createElement('section');
+  humorSection.id = 'humor-satire';
+  humorSection.className = 'section-block ruled-section';
+  humorSection.innerHTML = `
+    <div class="rh-humor-grid">
+      <article class="rh-humor-card">
+        <div class="section-kicker">POLITICAL CARTOON</div>
+        <h2>Political Cartoon</h2>
+        <p class="rh-humor-muted">The first Reality Herald political cartoon will appear here.</p>
+      </article>
+      <article class="rh-humor-card">
+        <div class="section-kicker">HUMOR &amp; SATIRE</div>
+        <h2><a href="/articles/humor/national-partial-radio-explores-christianity.html">National Partial Radio Explores Christianity by Interviewing Two People Who Agree With National Partial Radio</a></h2>
+        <p>A parody of selective media framing and the curious art of representing a broad tradition with a very narrow sample.</p>
+      </article>
+    </div>`;
+
+  const humorStyles = document.createElement('style');
+  humorStyles.textContent = `
+    .rh-humor-grid { display:grid; grid-template-columns:1fr 1fr; gap:32px; }
+    .rh-humor-card { min-width:0; }
+    .rh-humor-card + .rh-humor-card { border-left:1px solid #c8c1b6; padding-left:32px; }
+    .rh-humor-card h2 { margin:8px 0 10px; font-size:clamp(1.3rem,2vw,1.8rem); line-height:1.12; }
+    .rh-humor-card p { margin:0; }
+    .rh-humor-muted { color:#6b655d; font-style:italic; }
+    @media (max-width:700px) {
+      .rh-humor-grid { grid-template-columns:1fr; gap:24px; }
+      .rh-humor-card + .rh-humor-card { border-left:0; border-top:1px solid #c8c1b6; padding-left:0; padding-top:24px; }
+    }`;
+  document.head.appendChild(humorStyles);
+  newsSection.insertAdjacentElement('afterend', humorSection);
+}
+
 const newsletterForm = document.querySelector('.newsletter-form');
 if (newsletterForm) {
   newsletterForm.addEventListener('submit', (event) => {
