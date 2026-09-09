@@ -82,7 +82,7 @@ if (homepageLeadStory) {
   if (imageLink) {
     imageLink.setAttribute('href', farmBillUrl);
     imageLink.setAttribute('aria-label', 'Open Farm Bill Stalls in Senate story');
-    imageLink.style.backgroundImage = "url('/assets/images/farm-bill-capitol-tractor.jpg')";
+    imageLink.style.backgroundImage = "url('/assets/images/farm-bill-capitol-tractor.svg?v=2')";
     imageLink.style.backgroundSize = 'cover';
     imageLink.style.backgroundPosition = 'center';
     imageLink.style.backgroundRepeat = 'no-repeat';
