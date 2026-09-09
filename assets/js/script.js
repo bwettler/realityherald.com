@@ -68,7 +68,7 @@ if (homepageLeadStory) {
   if (imageLink) {
     imageLink.setAttribute('href', farmBillUrl);
     imageLink.setAttribute('aria-label', 'Open Farm Bill Stalls in Senate story');
-    imageLink.style.backgroundImage = "url('/assets/images/farm-bill-homepage-final.jpg?v=20260909')";
+    imageLink.style.backgroundImage = "url('/assets/images/farm-bill-homepage-final.webp?v=20260909b')";
     imageLink.style.backgroundSize = 'cover';
     imageLink.style.backgroundPosition = 'center';
     imageLink.style.backgroundRepeat = 'no-repeat';
@@ -93,7 +93,7 @@ const aiStoryUrl = '/articles/science-tech/ai-citations-and-evidence.html';
     imageBlock.setAttribute('href', aiStoryUrl);
     imageBlock.setAttribute('aria-label', 'Open AI citation article');
   }
-  imageBlock.style.backgroundImage = "url('/assets/images/ai-citation-student-professor-dean.jpg?v=20260909')";
+  imageBlock.style.backgroundImage = "url('/assets/images/ai-citation-student-professor-dean.webp?v=20260909b')";
   imageBlock.style.backgroundSize = 'cover';
   imageBlock.style.backgroundPosition = 'center';
   imageBlock.style.backgroundRepeat = 'no-repeat';
@@ -103,7 +103,7 @@ const aiStoryUrl = '/articles/science-tech/ai-citations-and-evidence.html';
 if (window.location.pathname.endsWith('/articles/science-tech/ai-citations-and-evidence.html')) {
   const aiHero = document.querySelector('.article-hero');
   if (aiHero) {
-    aiHero.innerHTML = '<img src="/assets/images/ai-citation-student-professor-dean.jpg?v=20260909" alt="Professor and dean confronting a student over a paper containing an incorrect citation." width="1200" height="900" decoding="async" style="display:block;width:100%;height:auto;">';
+    aiHero.innerHTML = '<img src="/assets/images/ai-citation-student-professor-dean.webp?v=20260909b" alt="Professor and dean confronting a student over a paper containing an incorrect citation." width="400" height="300" decoding="async" style="display:block;width:100%;height:auto;">';
   }
 }
 
