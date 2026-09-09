@@ -51,7 +51,7 @@ if (newsSection && !document.querySelector('#humor-satire')) {
       <article class="rh-humor-card">
         <div class="section-kicker">POLITICAL CARTOON</div>
         <a class="rh-cartoon-link" href="/articles/humor/national-partial-radio-explores-christianity.html" aria-label="Open Covering Christianity This Week cartoon and satire article">
-          <img class="rh-cartoon-image" src="/assets/images/scholars-reporter-radio-preacher.webp" width="1000" height="750" loading="lazy" decoding="async" alt="Black-and-white political cartoon showing a radio reporter interviewing an eccentric street preacher while academic experts in graduation gowns stand nearby." />
+          <img class="rh-cartoon-image" src="/assets/images/scholars-reporter-radio-preacher.jpg" width="320" height="240" loading="lazy" decoding="async" alt="Black-and-white political cartoon showing a radio reporter interviewing an eccentric street preacher while academic experts in graduation gowns stand nearby." />
         </a>
         <h2><a href="/articles/humor/national-partial-radio-explores-christianity.html">Covering Christianity This Week</a></h2>
         <p class="rh-cartoon-caption">Media professional hard at work.</p>
