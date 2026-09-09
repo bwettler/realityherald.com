@@ -82,7 +82,7 @@ if (homepageLeadStory) {
   if (imageLink) {
     imageLink.setAttribute('href', farmBillUrl);
     imageLink.setAttribute('aria-label', 'Open Farm Bill Stalls in Senate story');
-    imageLink.style.backgroundImage = "url('/assets/images/farm-bill-capitol-tractor.svg?v=2')";
+    imageLink.style.backgroundImage = "url('/assets/images/farm-bill-capitol-tractor.svg?v=3')";
     imageLink.style.backgroundSize = 'cover';
     imageLink.style.backgroundPosition = 'center';
     imageLink.style.backgroundRepeat = 'no-repeat';
@@ -95,7 +95,7 @@ if (homepageLeadStory) {
   if (byline) byline.innerHTML = 'Reality Herald Editorial Desk <span>•</span> 7 min read';
 
   const homepageDate = document.querySelector('.utility-bar > div:first-child');
-  if (homepageDate) homepageDate.textContent = 'Tuesday, September 8, 2026';
+  if (homepageDate) homepageDate.textContent = 'Wednesday, September 9, 2026';
 }
 
 const newsSection = document.querySelector('#news');
