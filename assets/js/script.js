@@ -8,7 +8,6 @@ if (!faviconLink.parentNode) document.head.appendChild(faviconLink);
 
 const menuButton = document.querySelector('.menu-button');
 const navLinks = document.querySelector('.nav-links');
-
 if (menuButton && navLinks) {
   menuButton.addEventListener('click', () => {
     const isOpen = navLinks.classList.toggle('open');
@@ -16,10 +15,7 @@ if (menuButton && navLinks) {
   });
 }
 
-// Desktop navigation dropdowns should close when the user clicks elsewhere,
-// opens a different dropdown, or presses Escape.
 const navDropdowns = Array.from(document.querySelectorAll('.nav-dropdown'));
-
 navDropdowns.forEach((dropdown) => {
   dropdown.addEventListener('toggle', () => {
     if (!dropdown.open) return;
@@ -28,19 +24,13 @@ navDropdowns.forEach((dropdown) => {
     });
   });
 });
-
 document.addEventListener('click', (event) => {
   if (navDropdowns.some((dropdown) => dropdown.contains(event.target))) return;
-  navDropdowns.forEach((dropdown) => {
-    dropdown.open = false;
-  });
+  navDropdowns.forEach((dropdown) => { dropdown.open = false; });
 });
-
 document.addEventListener('keydown', (event) => {
   if (event.key !== 'Escape') return;
-  navDropdowns.forEach((dropdown) => {
-    dropdown.open = false;
-  });
+  navDropdowns.forEach((dropdown) => { dropdown.open = false; });
 });
 
 const journalSectionLinks = {
@@ -50,25 +40,21 @@ const journalSectionLinks = {
   'Culture': '/culture/',
   'Ideas': '/ideas/'
 };
-
 document.querySelectorAll('.nav-links > a').forEach((link) => {
   const destination = journalSectionLinks[link.textContent.trim()];
   if (destination) link.setAttribute('href', destination);
 });
-
-const homepageJournalLinks = [
+[
   ['#science .section-heading-row a', '/science-tech/'],
   ['#history .section-heading-row a', '/history-theology/'],
   ['#culture .section-heading-row a', '/culture/'],
   ['#ideas .section-heading-row a', '/ideas/']
-];
-
-homepageJournalLinks.forEach(([selector, destination]) => {
+].forEach(([selector, destination]) => {
   const link = document.querySelector(selector);
   if (link) link.setAttribute('href', destination);
 });
 
-// Make the current Farm Bill report the lead homepage story.
+// Current Farm Bill report as the lead homepage story.
 const homepageLeadStory = document.querySelector('.lead-story');
 if (homepageLeadStory) {
   const farmBillUrl = '/articles/news/farm-bill-stalls-senate.html';
@@ -82,7 +68,7 @@ if (homepageLeadStory) {
   if (imageLink) {
     imageLink.setAttribute('href', farmBillUrl);
     imageLink.setAttribute('aria-label', 'Open Farm Bill Stalls in Senate story');
-    imageLink.style.backgroundImage = "url('/assets/images/farm-bill-capitol-tractor.svg?v=3')";
+    imageLink.style.backgroundImage = "url('/assets/images/farm-bill-homepage-final.jpg?v=20260909')";
     imageLink.style.backgroundSize = 'cover';
     imageLink.style.backgroundPosition = 'center';
     imageLink.style.backgroundRepeat = 'no-repeat';
@@ -93,9 +79,32 @@ if (homepageLeadStory) {
   }
   if (dek) dek.textContent = 'Republicans and Democrats agree farmers need a new law. They remain divided over how quickly states should begin sharing SNAP benefit costs when payment error rates run high.';
   if (byline) byline.innerHTML = 'Reality Herald Editorial Desk <span>•</span> 7 min read';
-
   const homepageDate = document.querySelector('.utility-bar > div:first-child');
   if (homepageDate) homepageDate.textContent = 'Wednesday, September 9, 2026';
+}
+
+// Use the AI citation artwork wherever that article appears on the homepage.
+const aiStoryUrl = '/articles/science-tech/ai-citations-and-evidence.html';
+[
+  document.querySelector('.secondary-story .story-image.image-two'),
+  document.querySelector('.large-feature .story-image.image-six')
+].filter(Boolean).forEach((imageBlock) => {
+  if (imageBlock.tagName === 'A') {
+    imageBlock.setAttribute('href', aiStoryUrl);
+    imageBlock.setAttribute('aria-label', 'Open AI citation article');
+  }
+  imageBlock.style.backgroundImage = "url('/assets/images/ai-citation-student-professor-dean.jpg?v=20260909')";
+  imageBlock.style.backgroundSize = 'cover';
+  imageBlock.style.backgroundPosition = 'center';
+  imageBlock.style.backgroundRepeat = 'no-repeat';
+});
+
+// Replace the AI article placeholder hero with the finished illustration.
+if (window.location.pathname.endsWith('/articles/science-tech/ai-citations-and-evidence.html')) {
+  const aiHero = document.querySelector('.article-hero');
+  if (aiHero) {
+    aiHero.innerHTML = '<img src="/assets/images/ai-citation-student-professor-dean.jpg?v=20260909" alt="Professor and dean confronting a student over a paper containing an incorrect citation." width="1200" height="900" decoding="async" style="display:block;width:100%;height:auto;">';
+  }
 }
 
 const newsSection = document.querySelector('#news');
@@ -119,7 +128,6 @@ if (newsSection && !document.querySelector('#humor-satire')) {
         <p>A parody of selective media framing and the curious art of representing a broad tradition with a very narrow sample.</p>
       </article>
     </div>`;
-
   const humorStyles = document.createElement('style');
   humorStyles.textContent = `
     .rh-humor-grid { display:grid; grid-template-columns:1fr 1fr; gap:32px; }
@@ -156,7 +164,6 @@ if (copyLinkButton) {
   copyLinkButton.addEventListener('click', async () => {
     const url = window.location.href;
     const originalText = copyLinkButton.textContent;
-
     try {
       await navigator.clipboard.writeText(url);
     } catch (error) {
@@ -170,63 +177,39 @@ if (copyLinkButton) {
       document.execCommand('copy');
       temporaryInput.remove();
     }
-
     copyLinkButton.textContent = 'Copied';
-    window.setTimeout(() => {
-      copyLinkButton.textContent = originalText;
-    }, 1500);
+    window.setTimeout(() => { copyLinkButton.textContent = originalText; }, 1500);
   });
 }
 
 document.addEventListener('click', (event) => {
   const button = event.target.closest('.article-actions button');
   if (!button || button.textContent.trim().toLowerCase() !== 'print') return;
-
   event.preventDefault();
   event.stopImmediatePropagation();
-
   const article = document.querySelector('.article-shell');
   if (!article) {
     window.print();
     return;
   }
-
   const printWindow = window.open('', '_blank');
   if (!printWindow) {
     window.print();
     return;
   }
-
   printWindow.opener = null;
-
   const stylesheetUrl = new URL('/assets/css/styles.css', window.location.origin).href;
   const articleCopy = article.cloneNode(true);
   const actions = articleCopy.querySelector('.article-actions');
   if (actions) actions.remove();
-
   printWindow.document.open();
   printWindow.document.write(`<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>${document.title}</title>
-  <link rel="stylesheet" href="${stylesheetUrl}">
-  <style>
-    body { margin: 0; }
-    .article-shell { width: min(900px, calc(100% - 48px)); margin: 32px auto; }
-    .article-hero { display: none; }
-  </style>
-</head>
-<body>${articleCopy.outerHTML}</body>
-</html>`);
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>${document.title}</title><link rel="stylesheet" href="${stylesheetUrl}"><style>body{margin:0}.article-shell{width:min(900px,calc(100% - 48px));margin:32px auto}.article-hero{display:none}</style></head><body>${articleCopy.outerHTML}</body></html>`);
   printWindow.document.close();
-
   const startPrint = () => {
     printWindow.focus();
     printWindow.print();
   };
-
   if (printWindow.document.readyState === 'complete') {
     window.setTimeout(startPrint, 250);
   } else {
