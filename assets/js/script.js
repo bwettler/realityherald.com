@@ -68,6 +68,36 @@ homepageJournalLinks.forEach(([selector, destination]) => {
   if (link) link.setAttribute('href', destination);
 });
 
+// Make the current Farm Bill report the lead homepage story.
+const homepageLeadStory = document.querySelector('.lead-story');
+if (homepageLeadStory) {
+  const farmBillUrl = '/articles/news/farm-bill-stalls-senate.html';
+  const eyebrow = homepageLeadStory.querySelector('.eyebrow');
+  const imageLink = homepageLeadStory.querySelector('.story-image');
+  const headlineLink = homepageLeadStory.querySelector('h2 a');
+  const dek = homepageLeadStory.querySelector('.dek');
+  const byline = homepageLeadStory.querySelector('.byline');
+
+  if (eyebrow) eyebrow.textContent = 'NEWS & ANALYSIS';
+  if (imageLink) {
+    imageLink.setAttribute('href', farmBillUrl);
+    imageLink.setAttribute('aria-label', 'Open Farm Bill Stalls in Senate story');
+    imageLink.style.backgroundImage = "url('/assets/images/farm-bill-capitol-tractor.jpg')";
+    imageLink.style.backgroundSize = 'cover';
+    imageLink.style.backgroundPosition = 'center';
+    imageLink.style.backgroundRepeat = 'no-repeat';
+  }
+  if (headlineLink) {
+    headlineLink.setAttribute('href', farmBillUrl);
+    headlineLink.textContent = 'Farm Bill Stalls in Senate as SNAP Fight Threatens Another Extension';
+  }
+  if (dek) dek.textContent = 'Republicans and Democrats agree farmers need a new law. They remain divided over how quickly states should begin sharing SNAP benefit costs when payment error rates run high.';
+  if (byline) byline.innerHTML = 'Reality Herald Editorial Desk <span>•</span> 7 min read';
+
+  const homepageDate = document.querySelector('.utility-bar > div:first-child');
+  if (homepageDate) homepageDate.textContent = 'Tuesday, September 8, 2026';
+}
+
 const newsSection = document.querySelector('#news');
 if (newsSection && !document.querySelector('#humor-satire')) {
   const humorSection = document.createElement('section');
