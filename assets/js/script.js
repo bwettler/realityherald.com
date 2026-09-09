@@ -16,6 +16,33 @@ if (menuButton && navLinks) {
   });
 }
 
+// Desktop navigation dropdowns should close when the user clicks elsewhere,
+// opens a different dropdown, or presses Escape.
+const navDropdowns = Array.from(document.querySelectorAll('.nav-dropdown'));
+
+navDropdowns.forEach((dropdown) => {
+  dropdown.addEventListener('toggle', () => {
+    if (!dropdown.open) return;
+    navDropdowns.forEach((otherDropdown) => {
+      if (otherDropdown !== dropdown) otherDropdown.open = false;
+    });
+  });
+});
+
+document.addEventListener('click', (event) => {
+  if (navDropdowns.some((dropdown) => dropdown.contains(event.target))) return;
+  navDropdowns.forEach((dropdown) => {
+    dropdown.open = false;
+  });
+});
+
+document.addEventListener('keydown', (event) => {
+  if (event.key !== 'Escape') return;
+  navDropdowns.forEach((dropdown) => {
+    dropdown.open = false;
+  });
+});
+
 const journalSectionLinks = {
   'Science & Technology': '/science-tech/',
   'History & Theology': '/history-theology/',
